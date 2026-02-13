@@ -1,0 +1,111 @@
+.pricing-hero {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.pricing-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.pricing-hero p {
+  color: #666;
+  margin-top: 10px;
+}
+.pricing-card {
+  background: #fff;
+  padding: 40px 25px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card h2 {
+  color: #dc3545;
+  margin: 15px 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+}
+
+.pricing-card.popular {
+  border: 2px solid #dc3545;
+  position: relative;
+}
+
+.pricing-card .badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dc3545;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+/* PAYMENT OPTIONS */
+.payment-options h6 {
+  font-weight: 600;
+}
+
+.payment-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-box input {
+  display: none;
+}
+
+.payment-box .icon {
+  font-size: 22px;
+  color: #dc3545;
+}
+
+.payment-box .text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ACTIVE STATE */
+.payment-box:hover,
+.payment-box input:checked + .icon {
+  color: #dc3545;
+}
+
+.payment-box input:checked ~ .text {
+  color: #dc3545;
+}
+
+/* Selected border */
+.payment-box input:checked ~ * {
+  font-weight: 600;
+}
+
+.payment-box input:checked {
+  display: none;
+}
+
+.payment-box input:checked ~ .icon,
+.payment-box input:checked ~ .text {
+  color: #dc3545;
+}
